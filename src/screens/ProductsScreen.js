@@ -30,7 +30,8 @@ export default function ProductsScreen({ navigation }) {
   }
 
   const renderProduct = ({ item }) => (
-    <TouchableOpacity style={styles.productCard}>
+    <TouchableOpacity style={styles.productCard}
+     onPress={() => navigation.navigate('ProductDetail', { product: item })}>
       <Image source={{ uri: item.image }} style={styles.productImage} />
       <View style={styles.productInfo}>
         <Text style={styles.productTitle} numberOfLines={2}>

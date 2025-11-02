@@ -4,7 +4,7 @@ export default function ProfileScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.screenTitle}>Profile</Text>
-      <Text>User profile will be here</Text>
+      <Text>dlkfdijif</Text>
     </View>
   );
 }

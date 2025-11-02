@@ -4,7 +4,7 @@ export default function CartScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.screenTitle}>Cart</Text>
-      <Text>Your cart is empty</Text>
+      <Text>dir chi 7aja hna </Text>
     </View>
   );
 }
