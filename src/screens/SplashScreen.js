@@ -15,11 +15,22 @@ import { View , Text , StyleSheet }  from "react-native";
     </View>
   );
 };
-const styles = create.StyleSheet({
+const styles = StyleSheet.create({
  container:{
   flex: 1 ,
   justifyContent : 'center',
   alignItems : 'center',
   backgroundColor : '#107df3ff',
- }
-})
+ },
+ logo : {
+   fontSize: 64,
+    marginBottom: 16,
+ },
+ title :{
+   fontSize: 32,
+    fontWeight: 'bold',
+    color: 'white',
+ },
+ 
+
+});
