@@ -1,35 +1,25 @@
-import { useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { useEffect , useState } from "react";
+import { View , Text , StyleSheet }  from "react-native";
 
-export default function SplashScreen({ navigation }) {
-  useEffect(() => {
-    setTimeout(() => {
+ export default function SplashScreen ({navigation}){
+
+  useEffect(() =>{
+    setTimeout(()=>{
       navigation.replace('MainTabs');
-    }, 2500);
-  }, []);
-
-  return (
+    } ,2000) ; 
+  } ,[]);
+  return(
     <View style={styles.container}>
       <Text style={styles.logo}>🛒</Text>
-      <Text style={styles.title}>ShopApp</Text>
+      <Text style={styles.title}>My Store</Text>
     </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#007AFF',
-  },
-  logo: {
-    fontSize: 64,
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: 'white',
-  },
-});
+};
+const styles = create.StyleSheet({
+ container:{
+  flex: 1 ,
+  justifyContent : 'center',
+  alignItems : 'center',
+  backgroundColor : '#107df3ff',
+ }
+})
